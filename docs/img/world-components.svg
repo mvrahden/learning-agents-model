@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="293 55 450 185" width="450pt" height="185pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.0.2 
+    <dc:date>2018-03-26 12:28:12 +0000</dc:date>
+  </metadata>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation=".872"/>
+      <feOffset in="blur" result="offset" dx="0" dy=".5"/>
+      <feFlood flood-color="black" flood-opacity=".25" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledDiamond_Marker" viewBox="-13 -6 14 12" markerWidth="14" markerHeight="12" color="black">
+      <g>
+        <path d="M -12 0 L -6 4.5 L 0 0 L -6 -4.5 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" viewBox="-1 -8 14 16" markerWidth="14" markerHeight="16" color="black">
+      <g>
+        <path d="M 12 0 L 0 -7 L 0 7 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="Diamond_Marker" viewBox="-1 -6 14 12" markerWidth="14" markerHeight="12" color="black">
+      <g>
+        <path d="M 12 0 L 6 -4.5 L 0 0 L 6 4.5 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g>
+      <title>WorldObjects</title>
+      <g>
+        <xl:use xl:href="#id60_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id59_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id50_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id11_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id49_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id10_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id65_Graphic" filter="url(#Shadow)"/>
+      </g>
+      <g id="id60_Graphic">
+        <rect x="650.7027" y="201.1416" width="90" height="36" fill="white"/>
+        <rect x="650.7027" y="201.1416" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(655.7027 212.1416)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="8.324219" y="11" textLength="63.35156">DQNSolver</tspan>
+        </text>
+      </g>
+      <g id="id59_Graphic">
+        <rect x="650.7027" y="151.46777" width="90" height="36" fill="white"/>
+        <rect x="650.7027" y="151.46777" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(655.7027 162.46777)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="16.322266" y="11" textLength="47.35547">Sensory</tspan>
+        </text>
+      </g>
+      <line x1="628.2027" y1="169.1416" x2="628.2027" y2="218.6416" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="650.7027" y1="219.1416" x2="628.2027" y2="219.1416" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="650.7027" y1="169.46777" x2="628.3758" y2="169.1416" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 614.9527 194.31183 L 625.5709 194.31756 L 628.2027 194.31756" marker-start="url(#FilledDiamond_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="556.5717" y1="176.30469" x2="556.5717" y2="162.95703" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g id="id50_Graphic">
+        <rect x="511.7027" y="176.30469" width="90" height="36" fill="white"/>
+        <rect x="511.7027" y="176.30469" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(516.7027 187.30469)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="15.003906" y="11" textLength="49.99219">RLAgent</tspan>
+        </text>
+      </g>
+      <g id="id11_Graphic">
+        <rect x="403.7027" y="176.30469" width="90" height="36" fill="white"/>
+        <rect x="403.7027" y="176.30469" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(408.7027 187.30469)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="27.663086" y="11" textLength="24.673828">Item</tspan>
+        </text>
+      </g>
+      <g id="id49_Graphic">
+        <rect x="295.7027" y="176.30469" width="90" height="36" fill="white"/>
+        <rect x="295.7027" y="176.30469" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(300.7027 187.30469)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="27.885742" y="11" textLength="11.326172">W</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="38.77246" y="11" textLength="13.341797">all</tspan>
+        </text>
+      </g>
+      <line x1="340.7027" y1="162.95703" x2="556.5717" y2="162.95703" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="340.7027" y1="176.30469" x2="340.7027" y2="162.95703" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="448.7027" y1="176.30469" x2="448.7027" y2="153.80469" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g id="id10_Graphic">
+        <rect x="403.7027" y="104.30469" width="90" height="36" fill="white"/>
+        <rect x="403.7027" y="104.30469" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(408.7027 115.30469)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="4.439453" y="11" textLength="11.326172">W</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="15.554688" y="11" textLength="60.00586">orldObject</tspan>
+        </text>
+      </g>
+      <path d="M 448.7027 104.30469 L 448.7027 75.09984 L 398.95263 75.261605" marker-end="url(#Diamond_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g id="id65_Graphic">
+        <rect x="295.7027" y="57.30469" width="90" height="36" fill="white"/>
+        <rect x="295.7027" y="57.30469" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(300.7027 68.30469)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="23.110352" y="11" textLength="11.326172">W</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="34.225586" y="11" textLength="22.664062">orld</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

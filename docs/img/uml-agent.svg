@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="813 -293 439 275" width="439pt" height="275pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.0.2 
+    <dc:date>2018-03-26 12:28:00 +0000</dc:date>
+  </metadata>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation=".872"/>
+      <feOffset in="blur" result="offset" dx="0" dy=".5"/>
+      <feFlood flood-color="black" flood-opacity=".25" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" viewBox="-1 -8 14 16" markerWidth="14" markerHeight="16" color="black">
+      <g>
+        <path d="M 12 0 L 0 -7 L 0 7 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Menlo" font-size="9" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="500">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledDiamond_Marker" viewBox="-13 -6 14 12" markerWidth="14" markerHeight="12" color="black">
+      <g>
+        <path d="M -12 0 L -6 4.5 L 0 0 L -6 -4.5 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g>
+      <title>RLAgent</title>
+      <g>
+        <xl:use xl:href="#id115882_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id115881_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id115874_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id115873_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id115880_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id115879_Graphic" filter="url(#Shadow)"/>
+      </g>
+      <line x1="962.75" y1="-219.15234" x2="962.75" y2="-241.65234" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g id="id115882_Graphic">
+        <rect x="917.75" y="-291.15234" width="90" height="36" fill="white"/>
+        <rect x="917.75" y="-291.15234" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(922.75 -280.15234)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="4.439453" y="11" textLength="11.326172">W</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="15.554688" y="11" textLength="60.00586">orldObject</tspan>
+        </text>
+      </g>
+      <line x1="1159" y1="-115.47852" x2="1136.5" y2="-115.47852" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      <g id="id115881_Graphic">
+        <rect x="815.5" y="-152" width="294.5" height="130.5" fill="white"/>
+        <rect x="815.5" y="-152" width="294.5" height="130.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(820.5 -147)" fill="black">
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="8" textLength="195.06445">+ RLAgent(id: int, brain: DQNSolver,</tspan>
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="18" textLength="249.24902">          sensory: Sensory, location: Point2D)</tspan>
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="38" textLength="81.27686">+ reset(): void</tspan>
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="48" textLength="260.08594">+ setTrainingModeTo(trainingMode: boolean): void</tspan>
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="68" textLength="157.13525">+ observe(world: World): void</tspan>
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="78" textLength="86.69531">+ decide(): void</tspan>
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="88" textLength="135.46143">+ act(world: World): void</tspan>
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="98" textLength="81.27686">+ learn(): void</tspan>
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="118" textLength="211.31982">+ processCollision(item: Item): boolean</tspan>
+        </text>
+      </g>
+      <g id="id115874_Graphic">
+        <rect x="1159" y="-133.47852" width="90" height="36" fill="white"/>
+        <rect x="1159" y="-133.47852" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(1164 -122.47852)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="8.324219" y="11" textLength="63.35156">DQNSolver</tspan>
+        </text>
+      </g>
+      <line x1="1123.2498" y1="-140.11945" x2="1136.5288" y2="-140.03873" marker-start="url(#FilledDiamond_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1136.5582" y1="-165.15234" x2="1136.5" y2="-115.47852" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g id="id115873_Graphic">
+        <rect x="1159" y="-183.15234" width="90" height="36" fill="white"/>
+        <rect x="1159" y="-183.15234" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(1164 -172.15234)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="16.322266" y="11" textLength="47.35547">Sensory</tspan>
+        </text>
+      </g>
+      <line x1="1159" y1="-165.15234" x2="1136.5582" y2="-165.15234" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      <g id="id115880_Graphic">
+        <rect x="815.5" y="-183.15234" width="294.5" height="31.152344" fill="white"/>
+        <rect x="815.5" y="-183.15234" width="294.5" height="31.152344" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(820.5 -178.15234)" fill="black">
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="8" textLength="97.53223">+ sensory: Sensory</tspan>
+          <tspan font-family="Menlo" font-size="9" font-weight="500" x="0" y="18" textLength="97.53223">+ brain: DQNSolver</tspan>
+        </text>
+      </g>
+      <g id="id115879_Graphic">
+        <rect x="815.5" y="-219.15234" width="294.5" height="36" fill="white"/>
+        <rect x="815.5" y="-219.15234" width="294.5" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(820.5 -208.15234)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="bold" x="117.2539" y="11" textLength="49.99219">RLAgent</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
