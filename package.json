@@ -19,5 +19,9 @@
     "@types/node": "^9.3.0",
     "rimraf": "^2.6.2",
     "typescript": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvrahden/learning-agents-model.git"
   }
 }
