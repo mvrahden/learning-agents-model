@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": true,
+    "declaration": true,
+    "removeComments": true,
+    "rootDir": "./src/",
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "allowUnusedLabels": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "src/*.ts",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
