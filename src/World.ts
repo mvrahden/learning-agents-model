@@ -99,14 +99,13 @@ export class World {
     }
     for (const agent of this.agents) {
       agent.increaseAge();
-      this.switchTrainingsMode(agent);
       agent.reset();
     }
   }
 
-  private switchTrainingsMode(agent: RLAgent): void {
-    if (this._clock === this.trainingModeSwitch) {
-      agent.setTrainingModeTo(false);
+  public switchTrainingModeOfAgents(trainingsMode: boolean): void {
+    for (const agent of this.agents) {
+      agent.setTrainingModeTo(trainingsMode);
     }
   }
 
