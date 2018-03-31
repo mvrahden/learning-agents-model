@@ -18,7 +18,6 @@ export class World {
   private agentFactory: RLAgentFactory;
   private itemFactory: ItemFactory;
   
-  trainingModeSwitch: number;
   maxAgents: number;
   maxItems: number;
 
@@ -27,12 +26,11 @@ export class World {
    * @param width Width of the Canvas (World)
    * @param height Height of the Canvas (World)
    */
-  constructor(width: number, height: number, maxAgents: number = 2, maxItems: number = 50, trainingModeSwitch: number = 2.5e6) {
+  constructor(width: number, height: number, maxAgents: number = 2, maxItems: number = 50) {
     this.width = width;
     this.height = height;
     this.maxAgents = maxAgents;
     this.maxItems = maxItems;
-    this.trainingModeSwitch = trainingModeSwitch;
 
     this.init();
   }
