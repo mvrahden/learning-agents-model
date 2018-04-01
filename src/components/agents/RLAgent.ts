@@ -14,7 +14,6 @@ import { WorldObject } from '../WorldObject';
 
 
 export class RLAgent extends WorldObject implements Agent {
-
   public readonly sensory: Sensory;
   public readonly brain: DQNBrain;
 
@@ -42,6 +41,10 @@ export class RLAgent extends WorldObject implements Agent {
     this.sensoryReward = 0;
 
     this.sensory.reset();
+  }
+
+  public load(brainState: string): void {
+    this.brain.load(brainState);
   }
 
   public setTrainingModeTo(trainingMode: boolean): any {
