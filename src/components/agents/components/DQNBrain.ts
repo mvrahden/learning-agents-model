@@ -9,8 +9,7 @@ export class DQNBrain extends DQNSolver {
    * Load brain State into current solver
    * @param brainState - as JSON string
    */
-  public load(brainState: string): void {
-    const brain = JSON.parse(brainState);
-    this.fromJSON(brain);
+  public load(brainState: object): void {
+    this.fromJSON(brainState as { ns, nh, na, net });
   }
 }

@@ -4,7 +4,7 @@ import { Opt, Env } from 'reinforce-js';
 
 export interface Agent {
   reset(): void;
-  load(brainState: string): void;
+  load(brainState: object): void;
 
   observe(world: World);
   decide(): void;

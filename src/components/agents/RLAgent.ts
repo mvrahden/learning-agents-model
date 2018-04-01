@@ -43,7 +43,7 @@ export class RLAgent extends WorldObject implements Agent {
     this.sensory.reset();
   }
 
-  public load(brainState: string): void {
+  public load(brainState: object): void {
     this.brain.load(brainState);
   }
 
