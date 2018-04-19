@@ -11,8 +11,8 @@
   "author": "Menno van Rahden",
   "license": "MIT",
   "dependencies": {
-    "recurrent-js": "^1.4.7",
-    "reinforce-js": "^1.4.7"
+    "recurrent-js": "^1.5.3",
+    "reinforce-js": "^1.4.8"
   },
   "devDependencies": {
     "@types/express": "^4.0.39",
