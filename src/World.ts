@@ -1,4 +1,4 @@
-import { R } from 'recurrent-js';
+import { Utils } from 'recurrent-js';
 import { Env, Opt } from 'reinforce-js';
 
 import { Wall } from './components/Wall';
@@ -173,7 +173,7 @@ export class World {
   }
 
   private spawnNewItemsRandomly(): void {
-    if (this.items.length < this.maxItems && R.randf(0, 1) < 0.25) {
+    if (this.items.length < this.maxItems && Utils.randf(0, 1) < 0.25) {
       this.spawnNewItem();
     }
   }

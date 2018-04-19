@@ -1,4 +1,4 @@
-import { Point2D } from "../utils/Point2D";
+import { Point2D } from '../utils/Point2D';
 
 export class WorldObject {
   public readonly id: number;

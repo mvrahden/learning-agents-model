@@ -1,4 +1,4 @@
-import { R } from 'recurrent-js';
+import { Utils } from 'recurrent-js';
 
 import { Point2D } from './../utils/Point2D';
 import { WorldObject } from './WorldObject';
@@ -30,6 +30,6 @@ export class Item extends WorldObject {
   }
 
   public shouldDieOfAge(worldClock: number): boolean {
-    return this.getAge() > 5000 && worldClock % 100 === 0 && R.randf(0, 1) < 0.1;
+    return this.getAge() > 5000 && worldClock % 100 === 0 && Utils.randf(0, 1) < 0.1;
   }
 }

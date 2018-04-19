@@ -1,4 +1,4 @@
-import { R } from 'recurrent-js';
+import { Utils } from 'recurrent-js';
 
 import { Item } from './Item';
 import { WorldObject } from './WorldObject';
@@ -19,9 +19,9 @@ export class ItemFactory {
    * creates an Item of a random type [1,2]
    */
   public createRandomItem(): Item {
-    const x = R.randf(20, this.width - 20);
-    const y = R.randf(20, this.height - 20);
-    const type = R.randi(1, 3); // type 1 or 2
+    const x = Utils.randf(20, this.width - 20);
+    const y = Utils.randf(20, this.height - 20);
+    const type = Utils.randi(1, 3); // type 1 or 2
     return new Item(x, y, type);
   }
 
@@ -31,8 +31,8 @@ export class ItemFactory {
    */
   public createItem(items: Array<Item>): Item {
     const type = this.determineItemType(items); // stablizing condition if --> ratioOfFood > random([0.25, 0.50])
-    const x = R.randf(20, this.width - 20);
-    const y = R.randf(20, this.height - 20);
+    const x = Utils.randf(20, this.width - 20);
+    const y = Utils.randf(20, this.height - 20);
     return new Item(x, y, type);
   }
 
@@ -57,12 +57,12 @@ export class ItemFactory {
   }
 
   private determineTypeDependingOnCurrentValuationTarget(item1Ratio: number): number {
-    if (item1Ratio < R.randf(0.25, 0.5)) { return 1; }
-    else if ((1 - item1Ratio) < R.randf(0.25, 0.5)) { return 2; }
+    if (item1Ratio < Utils.randf(0.25, 0.5)) { return 1; }
+    else if ((1 - item1Ratio) < Utils.randf(0.25, 0.5)) { return 2; }
     else { return this.getRandomItemType(); }
   }
 
   private getRandomItemType(): number {
-    return R.randi(1, 3);
+    return Utils.randi(1, 3);
   }
 }

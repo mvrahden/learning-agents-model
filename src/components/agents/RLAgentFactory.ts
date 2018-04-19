@@ -1,4 +1,4 @@
-import { R } from 'recurrent-js';
+import { Utils } from 'recurrent-js';
 import { DQNOpt, DQNEnv } from 'reinforce-js';
 
 import { RLAgent } from './RLAgent';
@@ -64,7 +64,7 @@ export class RLAgentFactory {
     const env = new DQNEnv(this.width, this.height, numberOfStates, this.numberOfActions);
     const opt = new DQNOpt();
     opt.setTrainingMode(true); // allows epsilon decay
-    opt.setNumberOfHiddenUnits(R.randi(20, 100)); // number of neurons in hidden layer
+    opt.setNumberOfHiddenUnits(Utils.randi(20, 100)); // number of neurons in hidden layer
     opt.setEpsilonDecay(1.0, 0.1, 1e6); // initial epsilon for epsilon-greedy policy
     opt.setEpsilon(0.05); // initial epsilon for epsilon-greedy policy
     opt.setGamma(0.9);
@@ -117,8 +117,8 @@ export class RLAgentFactory {
   }
 
   public createRandomDQNAgent(): RLAgent {
-    const x = R.randf(20, this.width - 20);
-    const y = R.randf(20, this.height - 20);
+    const x = Utils.randf(20, this.width - 20);
+    const y = Utils.randf(20, this.height - 20);
     if (this.tick % 2 !== 0) {
       this.tick++;
       return this.creatEyeDQNAgent(x, y);
